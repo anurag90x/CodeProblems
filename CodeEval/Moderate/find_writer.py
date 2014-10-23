@@ -1,5 +1,8 @@
 def find_writer(input_line):
-	
+	'''
+	Find writer name using the indices specified in the integer list
+
+	'''
 	text,key = input_line.split("|")
 	key_numbers = [int(index) for index in key.strip().split(" ")]
 	output = [text[i-1] for i in key_numbers]
